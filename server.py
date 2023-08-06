@@ -1,4 +1,3 @@
-
 import requests
 from flask import Flask, request, jsonify
 
@@ -26,4 +25,5 @@ def sub():
     return jsonify({'result':res})
 
 
-app.run()
+if __name__ == '__main__':
+    app.run(port=8080,host='0.0.0.0')
